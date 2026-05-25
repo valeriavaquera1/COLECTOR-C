@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        #main-container{
+            position: static;
+            display: flex;
+            padding: 0;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fd4100;
+            white-space: nowrap;
+            overflow: hidden;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+         .barra{
+            list-style: none;
+            display: flex;
+            gap: 100px;
+            animation: scroll 25s linear infinite;
+            width: max-content;
+            font-weight: bold;
+            padding-left: 100%;
+        }
+        @keyframes scroll{
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        :root {
+            --primary-orange: #ff6b00;
+            --dark-blue: #0c0d3d;
+            --light-blue: #2c4a7c;
+            --bg-gray: #f0f0f0;
+            --text-dark: #333;
+            --section-yellow: #ffcf40;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+         #imagen{
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #060C3D;
+            margin: auto;
+        }
+        .fondo img{
+            width: 420px;
+            justify-content: center;
+            align-items: center;
+            height: auto
+        }
+        #menu{
+            background-color: #ffc55b;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            overflow: hidden;
+            z-index: 1000;
+            font-size: 20px;
+            top: 0;
+            font-family: "Anton", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+        }
+        #menu a{
+            text-decoration: none;
+            color: black;
+        }
+        h2{
+            background-color: #2d4e81;
+            color: #ffffff;
+            padding: 20px;
+            margin-top: 0%;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+        .quien{
+            font-size: 30px;
+            text-align: center;
+            align-items: center;
+        }
+        body{
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        
+        .full-width-orange {
+            background-color: var(--primary-orange);
+            width: 100%;
+        }
+
+        .full-width-blue {
+            background-color: var(--dark-blue);
+            width: 100%;
+        }
+
+        .full-width-yellow {
+            background-color: var(--section-yellow);
+            border-bottom: 2px solid #e0b000;
+            width: 100%;
+        }
+
+        
+        .header-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 20px; 
+        }
+
+  
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .top-bar {
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .logo-section {
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        .logo-placeholder {
+            max-width: 300px;
+            width: 100%;
+            height: 60px;
+            background-color: #ddd;
+            border: 2px dashed #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: #666;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            padding: 5px 0;
+        }
+
+        .nav-menu a {
+            color: var(--text-dark);
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-orange);
+        }
+
+        .main-content {
+            padding: 30px 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+            background-color: var(--light-blue);
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .category-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .cat-btn {
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+            min-width: 140px;
+            max-width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-size: 0.9rem;
+        }
+
+        .cat-btn:hover {
+            background-color: #e65c00;
+        }
+
+        .content-section {
+            margin-top: 30px;
+        }
+
+        .section-header {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: white
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        .image-placeholder img {
+            width: 400px;
+            height: 300px;
+        }
+
+        .image-placeholder.large img {
+            height: 200px;
+        }
+
+        .tips-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            
+        }
+
+        .tips-list li {
+            margin-bottom: 10px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+        }
+
+        .footer-section {
+            background-color: var(--section-yellow);
+            padding: 35px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-title {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            color: white
+        }
+
+        .recommended-pages {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .page-link {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .page-link:hover {
+            background-color: #1a3a6c;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 20px 15px;
+            }
+            .page-title {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-menu {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .nav-menu a {
+                padding: 12px 0;
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+            
+            .nav-menu a:last-child {
+                border-bottom: none;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .category-buttons {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .cat-btn {
+                width: 100%;
+                max-width: none;
+            }
+
+            .top-bar {
+                font-size: 0.75rem;
+                padding: 10px 5px;
+            }
+        }
